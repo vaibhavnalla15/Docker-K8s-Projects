@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rps-deployment
+spec:
+  replicas: 2   # Run 2 pods for reliability
+  selector:
+    matchLabels:
+      app: rps-web-game
+  template:
+    metadata:
+      labels:
+        app: rps-web-game
+    spec:
+      containers:
+      - name: rps-container
+        image: vaibhavnalla0202/rps-web-game:latest   # update with your image
+        ports:
+        - containerPort: 5000

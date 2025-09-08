@@ -1,0 +1,104 @@
+# =======================================
+# OS Specific
+# =======================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# =======================================
+# Python
+# =======================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Test & Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# =======================================
+# VS Code / PyCharm / Editors
+# =======================================
+.vscode/
+.history/
+*.code-workspace
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# =======================================
+# Logs & Temp
+# =======================================
+*.log
+*.out
+*.err
+*.pid
+*.seed
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# =======================================
+# Docker
+# =======================================
+*.env
+.env.*
+docker-compose.override.yml
+
+# =======================================
+# Kubernetes
+# =======================================
+# Don’t ignore YAMLs (they are infra code),
+# but ignore any temp kube configs
+.kube/
+*.kubeconfig
+*.kube-temp
+
+# =======================================
+# Node (if frontend added later)
+# =======================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
